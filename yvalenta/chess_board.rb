@@ -1,8 +1,6 @@
 class Chess_board
 
   def board(f,c)
-    #f = 7
-    #c = 8
     col = 0
     perro = []
 
@@ -30,9 +28,6 @@ class Chess_board
   end
 end
 
-## Derechos de autor de las siguiente 3 lineas (@rderoldan1)
-#obj = Chess_board.new()
-#sara = obj.board(7,4)
-#print sara
+## Derechos de autor de las siguientes 2 lineas (@rderoldan1)
 args = ARGV.map(&:to_i)
 print Chess_board.new().board(*args)
