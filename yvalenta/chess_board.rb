@@ -1,10 +1,10 @@
 class Chess_board
 
-  def board(f,c)
+  def board(rows,cols)
     col = 0
     perro = []
 
-    for eo in 1..c
+    for eo in 1..cols
       ñ = []
       if ñ.size.eql? 0
         if perro.size.eql? 0
@@ -14,7 +14,7 @@ class Chess_board
         end
       end
 
-      for oe in 2..f
+      for oe in 2..rows
         if ñ.last.eql? 0
           ñ.push(1)
         else
