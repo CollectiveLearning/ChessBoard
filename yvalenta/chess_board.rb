@@ -2,29 +2,29 @@ class Chess_board
 
   def board(rows,cols)
     col = 0
-    perro = []
+    ary = []
 
-    for eo in 1..cols
-      ñ = []
-      if ñ.size.eql? 0
-        if perro.size.eql? 0
-          ñ.push(0)
-        elsif perro[col-1].first.eql? 0
-          ñ.push(1)
+    for cycle_columns in 1..cols
+      ary_color = []
+      if ary_color.size.eql? 0
+        if ary.size.eql? 0
+          ary_color.push(0)
+        elsif ary[col-1].first.eql? 0
+          ary_color.push(1)
         end
       end
 
-      for oe in 2..rows
-        if ñ.last.eql? 0
-          ñ.push(1)
+      for cycle_rows in 2..rows
+        if ary_color.last.eql? 0
+          ary_color.push(1)
         else
-          ñ.push(0)
+          ary_color.push(0)
         end
       end
-      perro[col] = ñ
+      ary[col] = ary_color
       col = col+1
     end
-    perro
+    ary
   end
 end
 
