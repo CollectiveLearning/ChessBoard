@@ -32,7 +32,7 @@ class Chess
 
     (1..@lines).each do |line|
       (1..@cols).each do |col|
-        value += set_cell_value(line, col)
+        value += set_cell_value(line, col).to_s
         value += "\n" if col == @cols
       end
     end
@@ -51,7 +51,7 @@ class Chess
   # Return:
   #  => Return the value of the current cell after validate if the current line and col is pair or odd
   def set_cell_value(line, col)
-    line.odd? ? col.odd? ? '1' : '0' : col.odd? ? '0' : '1'
+    (line+col) %2
   end
 
 end
