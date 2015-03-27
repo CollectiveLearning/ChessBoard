@@ -9,7 +9,7 @@ class Chess
   def draw
     for row in 1..self.rows do
       for col in 1..self.cols do
-        print (row+col)%2 == 0 ? ' 0 ' : ' 1 '
+        print "#{(row+col)%2} "
       end
       puts
     end
