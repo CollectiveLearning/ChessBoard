@@ -7,15 +7,13 @@ class ChessBoard
 	end
 
 	def print_board
-		output = ""
-	  cols.times do |col|
-	  	rows.times do |row|
-			  output.concat (( col + row ) % 2).to_s
-			end
-			output.concat("\n")
-		end
-		output
+		(1 .. rows).inject([]) { |board, row| board << line_maker(row) }.join("\n")
 	end
+
+	def line_maker(row)
+		(1 .. cols).inject([]) { |ary, col| ary << (col + row) % 2 }.join(" ")
+	end
+
 end
 args = ARGV.map(&:to_i)
 puts ChessBoard.new(*args).print_board
