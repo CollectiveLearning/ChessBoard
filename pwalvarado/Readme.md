@@ -1,4 +1,4 @@
-## Chess board
+## Chess board, second approach
 
 Print to the standard output a chessboard of size N,M where N is the number of rows and M is the number of columns.
 You have to print a 0 where the board is white and an 1 otherwise.
@@ -32,3 +32,4 @@ $ ruby chess_board.rb 9 10
 1 0 1 0 1 0 1 0 1 0
 0 1 0 1 0 1 0 1 0 1
 ```
+Review previous commit (82d3022), for first approach
