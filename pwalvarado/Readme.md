@@ -32,4 +32,4 @@ $ ruby chess_board.rb 9 10
 1 0 1 0 1 0 1 0 1 0
 0 1 0 1 0 1 0 1 0 1
 ```
-Review previous commit (82d3022), for first approach
+Review previous commit [82d3022](https://github.com/pwalvarado/ChessBoard/commit/82d302286a2bd23b6557556819448849c439a280) , for first approach
