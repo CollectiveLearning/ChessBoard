@@ -2,7 +2,8 @@ class Chess
   attr_accessor :fila, :columna
 
   def initialize(fila, columna)
-    @fila, @columna=fila, columna
+    @fila = fila
+    @columna = columna
     intercalar
   end
   def intercalar
