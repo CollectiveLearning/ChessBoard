@@ -7,7 +7,7 @@ class Chess
     intercalar
   end
   def intercalar
-    @board=Array.new(@fila){Array.new(@columna)}
+    @board=Array.new(@fila) {Array.new(@columna) }
     @board[0][0]=1
     for f in 0..self.fila-1
       for c in 0..self.columna-1
