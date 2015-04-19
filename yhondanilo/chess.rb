@@ -6,8 +6,9 @@ class Chess
     @columna = columna
     intercalar
   end
+
   def intercalar
-    @board=Array.new(@fila) {Array.new(@columna) }
+    @board=Array.new(@fila){ Array.new(@columna) }
     @board[0][0]=1
     for f in 0..self.fila-1
       for c in 0..self.columna-1
@@ -16,7 +17,6 @@ class Chess
         elsif @board[f][c-1]==1
           @board[f][c]=0
         end
-        #if @board[f][c]==@board[f][@columna-1]
         if c==@columna-1
           ultimo=@board[f][c]
           if ultimo==0
@@ -28,6 +28,7 @@ class Chess
       end
     end
   end
+
   def imprimir
     for f in 0..self.fila-1
       for c in 0..self.columna-1
