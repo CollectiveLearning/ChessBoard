@@ -28,11 +28,11 @@ class Chess
     end
   end
   def imprimir
-   for f in 0..self.fila-1
-    for c in 0..self.columna-1
-    	puts @board[f][c]
+    for f in 0..self.fila-1
+      for c in 0..self.columna-1
+    	  puts @board[f][c]
+      end
     end
-   end
   end
 end
 
