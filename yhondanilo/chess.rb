@@ -16,7 +16,7 @@ class Chess
           @board[f][c]=0
         end
         #if @board[f][c]==@board[f][@columna-1]
-         if c==@columna-1
+        if c==@columna-1
           ultimo=@board[f][c]
           if ultimo==0
             @board[f+1][c]=1
@@ -24,8 +24,8 @@ class Chess
             @board[f+1][c]=0
           end
         end
-       end
-    end 		 		
+      end
+    end
   end
   def imprimir
    for f in 0..self.fila-1
