@@ -15,11 +15,12 @@ class Chess
         elsif @board[f][c-1]==1
           @board[f][c]=0
         end
-        if @board[f][c]==@board[f][@columna]
+        #if @board[f][c]==@board[f][@columna-1]
+         if c==@columna-1
           ultimo=@board[f][c]
-          if @board[f][c]==0
+          if ultimo==0
             @board[f+1][c]=1
-          elsif @board[f][c]==1
+          elsif ultimo==1
             @board[f+1][c]=0
           end
         end
