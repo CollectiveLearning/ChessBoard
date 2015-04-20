@@ -1,17 +1,17 @@
 class Chess
-  attr_accessor :fila, :columna
+  attr_accessor :filas, :columnas
 
-  def initialize(fila, columna)
-    @fila = fila
-    @columna = columna
+  def initialize(filas, columnas)
+    @filas = filas
+    @columnas = columnas
     intercalar
   end
 
   def intercalar
-    @board = Array.new(@fila){ Array.new(@columna) }
-    @board[0][0] = 1
-    for f in 0..self.fila - 1
-      for c in 0..self.columna - 1
+    @board = Array.new(@filas){ Array.new(@columnas) }
+    @board[1][1] = 1
+    for f in 1..self.filas
+      for c in 1..self.columnas
         if @board[f][c - 1] == 0
           @board[f][c] =  1
         elsif @board[f][c - 1] == 1
@@ -30,8 +30,8 @@ class Chess
   end
 
   def imprimir
-    for f in 0..self.fila - 1
-      for c in 0..self.columna - 1
+    for f in 1..self.filas
+      for c in 1..self.columnas
         puts @board[f][c]
       end
     end
