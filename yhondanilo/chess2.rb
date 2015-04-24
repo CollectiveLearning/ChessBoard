@@ -7,18 +7,18 @@ class Chess
   end
 
   def intercalar
-    @board = Array.new(@filas){ Array.new(@columnas) }
+    @board = Array.new(@filas) { Array.new(@columnas) }
     for f in 1..self.filas
       for c in 1..self.columnas
         @ultimo_color = get_color
-        @board[f][c] = @ultimo_color       
-      end      
-    end
+        @board[f][c] = @ultimo_color
+        end
+      end
   end
 
   def get_color
-    case @ultimo_color 
-    when 0 then 1     
+    case @ultimo_color
+    when 0 then 1
     when 1 then 0
     end
   end
