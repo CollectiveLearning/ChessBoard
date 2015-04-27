@@ -1,0 +1,1 @@
+The user most type the rows and columns size. Then the program will printing out a nested array as a Chessboard where whites blocks becomes to 1 and blacks to 0.
